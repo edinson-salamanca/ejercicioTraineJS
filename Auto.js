@@ -1,9 +1,11 @@
+const numberFormat = require('./numberFormat');
+
 class Auto {
-  constructor(opciones) {
-    this.marca = opciones.marca;
-    this.modelo = opciones.modelo;
-    this.puerta = opciones.puerta;
-    this.precio = opciones.precio;
+  constructor({ marca, modelo, puerta, precio }) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.puertas = puerta;
+    this.precio = precio.toFixed(2);
   }
 
   get getMarca() {
@@ -23,7 +25,9 @@ class Auto {
   }
 
   toString() {
-    return `Marca: ${this.marca} // Modelo: ${this.modelo} // Puertas: ${this.puertas} // Precio: ${this.precio}`;
+    return `Marca: ${this.marca} // Modelo: ${this.modelo} // Puertas: ${
+      this.puertas
+    } // Precio: ${numberFormat(this.precio)}`;
   }
 }
 
