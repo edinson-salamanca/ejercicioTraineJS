@@ -5,6 +5,11 @@ class Moto extends Auto {
     super(opciones);
     this.cilindrada = opciones.cilindrada;
   }
+
+  get getCilindrada() {
+    return this.cilindrada;
+  }
+
   toString() {
     return super
       .toString()
