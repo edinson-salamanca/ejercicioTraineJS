@@ -2,7 +2,7 @@ const Auto = require('./Auto');
 
 class Moto extends Auto {
   constructor({ marca, modelo, cilindrada, precio }) {
-    super({marca,modelo,precio});
+    super({ marca, modelo, precio });
     this.cilindrada = cilindrada;
   }
 
