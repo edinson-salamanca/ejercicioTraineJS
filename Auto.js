@@ -1,9 +1,9 @@
 class Auto {
-  constructor(opciones) {
-    this.marca = opciones.marca;
-    this.modelo = opciones.modelo;
-    this.puerta = opciones.puerta;
-    this.precio = opciones.precio;
+  constructor({ marca, modelo, puertas, precio }) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.puertas = puertas;
+    this.precio = precio;
   }
 
   get getMarca() {
@@ -15,7 +15,7 @@ class Auto {
   }
 
   get getPuerta() {
-    return this.puerta;
+    return this.puertas;
   }
 
   get getPrecio() {
