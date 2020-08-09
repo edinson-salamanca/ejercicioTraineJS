@@ -5,7 +5,7 @@ module.exports = [
   new Auto({
     marca: 'Peugeot',
     modelo: '206',
-    puerta: 4,
+    puertas: 4,
     precio: 200000,
   }),
   new Moto({
@@ -17,7 +17,7 @@ module.exports = [
   new Auto({
     marca: 'Peugeot',
     modelo: '208',
-    puerta: 5,
+    puertas: 5,
     precio: 250000,
   }),
   new Moto({
