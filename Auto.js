@@ -2,7 +2,11 @@ class Auto {
   constructor({ marca, modelo, puertas, precio }) {
     this.marca = marca;
     this.modelo = modelo;
-    this.puertas = puertas;
+
+    if (typeof puertas === 'number') {
+      this.puertas = puertas;
+    }
+
     this.precio = precio;
   }
 
